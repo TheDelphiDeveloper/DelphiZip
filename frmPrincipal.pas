@@ -123,7 +123,7 @@ begin
         Extrair(edCaminho.Text, lDirProcessado);
 
       LimparEditCaminho;
-      ShowMessage('Processo Concluído.');
+      ShowMessage('Processo concluído.');
       AbrirDiretorioDoProcesso(lDirProcessado);
     end;
   end;
