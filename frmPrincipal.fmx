@@ -1,0 +1,171 @@
+object fPrincipal: TfPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'DelphiZip'
+  ClientHeight = 533
+  ClientWidth = 644
+  Fill.Color = xFF020323
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle2: TRectangle
+    Anchors = [akRight, akBottom]
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFFF5757
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFFF1616
+        Offset = 1.000000000000000000
+      end>
+    Position.X = 541.000000000000000000
+    Position.Y = 344.000000000000000000
+    RotationAngle = 45.000000000000000000
+    Sides = []
+    Size.Width = 185.000000000000000000
+    Size.Height = 411.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+  end
+  object Rectangle1: TRectangle
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFFF5757
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFFF1616
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 1.000000000000000000
+    Fill.Gradient.StartPosition.Y = 0.733153879642486600
+    Fill.Gradient.StopPosition.Y = 0.266846120357513400
+    Position.X = -155.000000000000000000
+    Position.Y = -239.000000000000000000
+    RotationAngle = 225.000000000000000000
+    Sides = []
+    Size.Width = 301.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Center
+    Margins.Top = -50.000000000000000000
+    Size.Width = 503.000000000000000000
+    Size.Height = 182.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object edCaminho: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Center
+      TabOrder = 0
+      TextSettings.Font.Size = 13.000000000000000000
+      Size.Width = 504.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Localizar Arquivo'
+      StyledSettings = [Family, Style, FontColor]
+      object EditButton1: TEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 52.000000000000000000
+        Size.Height = 53.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '...'
+        OnClick = EditButton1Click
+      end
+    end
+    object Rectangle4: TRectangle
+      Align = Center
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFFF5757
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFFF1616
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 1.000000000000000000
+      Fill.Gradient.StartPosition.Y = 0.733153879642486600
+      Fill.Gradient.StopPosition.Y = 0.266846120357513400
+      Margins.Bottom = -180.000000000000000000
+      Sides = []
+      Size.Width = 217.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 20.000000000000000000
+      YRadius = 20.000000000000000000
+      object sbExecute: TSpeedButton
+        Align = Client
+        StyledSettings = [FontColor]
+        Size.Width = 217.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Executar'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = sbExecuteClick
+      end
+    end
+    object rbCompactar: TRadioButton
+      StyledSettings = [Family, Size, Style]
+      GroupName = 'Tipo'
+      IsChecked = True
+      Position.X = 128.000000000000000000
+      Position.Y = 27.000000000000000000
+      TabOrder = 2
+      Text = 'Compactar'
+      TextSettings.FontColor = claWhite
+      OnClick = rbCompactarClick
+    end
+    object rbExtrair: TRadioButton
+      StyledSettings = [Family, Size, Style]
+      GroupName = 'Tipo'
+      Position.X = 280.000000000000000000
+      Position.Y = 27.000000000000000000
+      TabOrder = 3
+      Text = 'Extrair'
+      TextSettings.FontColor = claWhite
+      OnClick = rbExtrairClick
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Size.Width = 644.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Text1: TText
+      Align = Center
+      Size.Width = 200.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'DelphiZip'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+  end
+  object odAbrir: TOpenDialog
+    FileName = 
+      'C:\Users\Andre\Documents\FTP\The Delphi Developer\DelphiZip\Win3' +
+      '2\Debug\DelphiZip.exe'
+    Left = 480
+    Top = 56
+  end
+end
